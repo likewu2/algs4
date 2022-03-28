@@ -6,32 +6,22 @@ import java.util.Arrays;
  *
  *  @author lkw
  */
-public class QuickMyTest {
+public class BubbleMyTest {
     // This class should not be instantiated.
-    private QuickMyTest() { }
+    private BubbleMyTest() { }
 
     // quicksort the subarray from a[lo] to a[hi]
     private static void sort(int[] a, int lo, int hi) {
-        if(lo<hi) {
-            int p=core(a,lo,hi);
-            sort(a, lo, p - 1);
-            sort(a,p+1,hi);
-        }
-    }
-
-    // partition the subarray a[lo..hi] so that a[lo..j-1] <= a[j] <= a[j+1..hi]
-    // and return the index j.
-    private static int core(int[] a, int lo, int hi) {
-        int x=a[hi];
-        int i=lo;
-        for(int j=lo;j<=hi-1;j++) {
-            if(a[j]>=x){
-                swap(a,i,j);
-                i++;
+        for(int i=lo;i<hi;i++) {
+            boolean swaped=false;
+            for(int j=lo;j<hi-i;j++){
+                if(a[j]>a[j+1]) {
+                    swap(a, j, j + 1);
+                    swaped = true;
+                }
             }
+            if(!swaped) break;
         }
-        swap(a,i,hi);
-        return i;
     }
 
     public static void main(String[] args) {
