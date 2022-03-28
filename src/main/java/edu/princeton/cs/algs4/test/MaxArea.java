@@ -25,7 +25,8 @@ public class MaxArea {
                 ansJ=j;
             }
             System.out.println("i: "+i+" j: "+j+" tmpAns: "+tmpAns);
-            if(count % 2 ==0) i++; else j--;
+            //if(count % 2 ==0) i++; else j--;
+            if(a[i]<a[j]) i++; else j--;
             count++;
         }
         System.out.println("ansI: "+ansI+" ansJ: "+ansJ);
