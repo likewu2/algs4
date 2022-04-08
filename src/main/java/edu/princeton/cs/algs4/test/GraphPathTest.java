@@ -12,7 +12,7 @@ public class GraphPathTest {
         a.addEdge(3, 5);
         a.addEdge(5, 1);
         Path b= new Path(a, 1);
-        b.showPath(1);
+        b.showPath(5);
         //System.out.println("ans: "+ String.join(",", StreamSupport.stream(Spliterators.spliteratorUnknownSize(a.adj(1),0),false).map(n->n.toString()).collect(Collectors.toList())));
     }
 
