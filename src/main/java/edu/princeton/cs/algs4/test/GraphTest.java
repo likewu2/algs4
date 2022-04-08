@@ -6,8 +6,8 @@ import java.util.stream.StreamSupport;
 
 public class GraphTest {
     public static void main(String[] args) {
-        DenseGraphIterater a= new DenseGraphIterater(6, true);
-        //SparseGraphIterater a= new SparseGraphIterater(6, true);
+        Graph a= new DenseGraphIterater(6, true);
+        //Graph a= new SparseGraphIterater(6, true);
         a.addEdge(1, 3);
         a.addEdge(3, 5);
         a.addEdge(5, 1);
@@ -15,7 +15,14 @@ public class GraphTest {
         System.out.println("ans: "+ String.join(",", StreamSupport.stream(Spliterators.spliteratorUnknownSize(a.adj(1),0),false).map(n->n.toString()).collect(Collectors.toList())));
     }
 
-    static class DenseGraphIterater {
+    public static interface Graph {
+        int V();
+        int E();
+        void addEdge(int v, int w);
+        Iterator<Integer> adj(int v);
+    }
+
+    public static class DenseGraphIterater implements Graph {
         private int n;
         private int m;
         private boolean directed;
@@ -59,7 +66,7 @@ public class GraphTest {
         }
     }
 
-    static class SparseGraphIterater {
+    public static class SparseGraphIterater implements Graph {
         private int n;
         private int m;
         private boolean directed;
