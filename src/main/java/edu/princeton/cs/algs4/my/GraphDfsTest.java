@@ -1,8 +1,6 @@
-package edu.princeton.cs.algs4.test;
+package edu.princeton.cs.algs4.my;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Spliterators;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;

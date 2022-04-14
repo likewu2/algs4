@@ -1,4 +1,4 @@
-package edu.princeton.cs.algs4.test;
+package edu.princeton.cs.algs4.my;
 
 import java.util.*;
 import java.util.stream.Collectors;

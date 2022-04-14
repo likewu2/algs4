@@ -1,6 +1,5 @@
-package edu.princeton.cs.algs4.test;
+package edu.princeton.cs.algs4.my;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
