@@ -23,8 +23,9 @@ public class RotateArray {
         int len=end-start+1;
         for(int i=start;i<start+len/2;i++) {
             int tmp=a[i];
-            a[i]=a[2*start+len-1-i];
-            a[2*start+len-1-i]=tmp;
+            int right=2*start+len-1-i;
+            a[i]=a[right];
+            a[right]=tmp;
         }
     }
 }
