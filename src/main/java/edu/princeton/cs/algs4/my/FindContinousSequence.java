@@ -4,8 +4,6 @@ import java.util.*;
 
 public class FindContinousSequence {
     public static void main(String[] args) {
-        int[] a= {1,};
-        System.out.println("a: "+ Arrays.toString(a));
         int[][] ans = parse(9);
         System.out.println("ans: "+Arrays.deepToString(ans));
     }
