@@ -15,11 +15,10 @@ public class DpBeibao {
     }
 
     private static int parse(int v, int[] price, int[] weight) {
-        int n=price.length-1;
         int[] dp=new int[v+1];
         int max=0;
 
-        for(int i=1;i<n+1;i++) {
+        for(int i=1;i<price.length;i++) {
             for(int j=v;j>0;j--) {
                 if(j-weight[i]>=0) {
                     dp[j] = Math.max(dp[j], dp[j-weight[i]]+price[i]);

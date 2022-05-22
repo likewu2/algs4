@@ -6,7 +6,7 @@ public class DpZuichangZixulie {
     public static void main(String[] args) {
         int[] a= {5, 1, 6, 8, 2, 4, 5, 10};
         System.out.println("a: "+ Arrays.toString(a));
-        int ans = parse(a);
+        int ans = parse1(a);
         System.out.println("ans: "+ans);
     }
 
