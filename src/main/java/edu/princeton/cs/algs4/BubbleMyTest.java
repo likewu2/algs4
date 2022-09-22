@@ -10,7 +10,6 @@ public class BubbleMyTest {
     // This class should not be instantiated.
     private BubbleMyTest() { }
 
-    // quicksort the subarray from a[lo] to a[hi]
     private static void sort(int[] a, int lo, int hi) {
         for(int i=lo;i<hi;i++) {
             boolean swaped=false;

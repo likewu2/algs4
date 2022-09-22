@@ -21,11 +21,12 @@ public class QuickMyTest {
 
     // partition the subarray a[lo..hi] so that a[lo..j-1] <= a[j] <= a[j+1..hi]
     // and return the index j.
-    private static int core(int[] a, int lo, int hi) {
+    private static int core(int[] a, int lo, int hi) {  //reverse sort
         int x=a[hi];
         int i=lo;
         for(int j=lo;j<=hi-1;j++) {
-            if(a[j]>=x){
+            //if(a[j]>=x){
+            if(a[j]<=x){
                 swap(a,i,j);
                 i++;
             }

@@ -36,7 +36,3 @@ public class DpBeibao {
     }
 }
 
-//kitten -> sitting
-//sitten  (k->s)
-//sittin  (e->i)
-//sitting ( ->g)
