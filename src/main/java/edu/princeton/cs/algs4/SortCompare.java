@@ -2,7 +2,10 @@ package edu.princeton.cs.algs4;
 
 public class SortCompare {
     public static double time(String alg, Double[] a)
-    { /* See text. */ }
+    {
+        /* See text. */
+        return 0;
+    }
     public static double timeRandomInput(String alg, int N, int T)
     { // Use alg to sort T random arrays of length N.
         double total = 0.0;

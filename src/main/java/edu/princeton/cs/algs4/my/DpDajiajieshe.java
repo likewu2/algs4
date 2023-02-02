@@ -23,7 +23,7 @@ public class DpDajiajieshe {
             dp[i]=Math.max(dp[i-2]+a[i], dp[i-1]);
         }
 
-        System.out.println("dp: "+Arrays.deepToString(dp));
+        System.out.println("dp: "+Arrays.toString(dp));
         return dp[a.length-1];
     }
 }
